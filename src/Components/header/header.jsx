@@ -11,7 +11,7 @@ const buttonList = [
     },
     {
         name : "COFFEE",
-        link : "coffee",
+        link : "cafe",
         customCss : "",
         img : "",
     },
@@ -29,7 +29,7 @@ const buttonList = [
     },
     {
         name : "Localizar tienda",
-        link : "localizar",
+        link : "https://www.google.com.ar/maps/search/Starbucks/@-34.6556054,-58.4823916,11z?entry=ttu",
         customCss : "header__button--right",
         img : "",
     },
@@ -44,7 +44,6 @@ function Header() {
                 <ul className='header__container'>
                     {
                         buttonList.map((aButton,index) => {
-                            console.log("Esto contiene cada button ", aButton);
                             
                             return < HeaderButton key={index} data={aButton} />;
                         })
